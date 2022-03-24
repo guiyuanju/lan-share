@@ -1,7 +1,7 @@
 (ns tools-build
   (:require [clojure.tools.build.api :as b]))
 
-(def lib 'lasvice/lan-show)
+(def lib 'lasvice/lan-share)
 (def version "0.1.0")
 (def class-dir "classes")
 (def basis (b/create-basis {:project "deps.edn"}))
