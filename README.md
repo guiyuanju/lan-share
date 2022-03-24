@@ -1,10 +1,23 @@
 # lan-share
 
-FIXME: Write a one-line description of your library/project.
+A simple chatbox-like pastebin service.
+It is useful for transferring text between multiple devices, stashing thoughs, or just use it as a fake boring single user "chat room" :)
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+This is a standalone uberjar which contains a server inside, all you need is to have java installed, and run `java -jar <newest-version-jar> <your-preferred-user-name>` (e.g. `java -jar lan-show-0.1.0-standalone.jar Harry`), then open "http://localhost:3000" to access it.
+
+![preview](2022-03-24-231047_1988x1889_scrot.png)
+
+Click username box to delete this message.
+
+It also provides RESTful API.
+- GET "/api/entries": get all entries
+- POST "/api/entries": add a new entry
+- DELETE "/api/entries": delete some entries
+- GET "/api/user": get the current username
+
+Currently it only support plain text, more formats may be added in the future.
 
 ## Development
 
