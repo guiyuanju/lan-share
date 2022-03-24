@@ -25,9 +25,12 @@
 (defn get-user-name []
   (GET "/api/user" {:response-format :json
                     :keywords? true
-                    :handler (fn [r] (when-let [username (:username r)]
-                                       (swap! app-state assoc-in [:username] username)))}))
+                    :handler (fn [r] (println r)(when-let [username (:username r)]
+                                         (swap! app-state assoc-in [:username] username)))}))
 (get-user-name)
+
+(comment
+  (get-in @app-state [:username]))
 
 (def in$ (chan))
 (defn populate-db []
