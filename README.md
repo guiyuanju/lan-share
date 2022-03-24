@@ -7,7 +7,7 @@ It is useful for transferring text between multiple devices, stashing thoughs, o
 
 This is a standalone uberjar which contains a server inside, all you need is to have java installed, and run `java -jar <newest-version-jar> <your-preferred-user-name>` (e.g. `java -jar lan-show-0.1.0-standalone.jar Harry`), then open "http://localhost:3000" to access it.
 
-![preview](2022-03-24-231047_1988x1889_scrot.png)
+![preview](./resources/2022-03-24-231047_1988x1889_scrot.png)
 
 Click username box to delete this message.
 
