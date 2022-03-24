@@ -1,0 +1,12 @@
+/* some style */
+
+.close-btn {
+    display: none;
+    color: blue;
+}
+
+.close-btn:hover {
+    display: block;
+    /* display: none; */
+    color: red;
+}
